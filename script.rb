@@ -2,7 +2,7 @@ require 'securerandom'
 require 'json'
 require 'bcrypt'
 
-ARQUIVO = "user.json"
+ARQUIVO = ENV['usuarios]
 
 def salvarUser(user)
   usuarios = []

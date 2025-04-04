@@ -1,7 +1,7 @@
 require 'bcrypt'
 require 'json'
 
-ARQUIVO = "user.json"
+ARQUIVO = ENV['usuarios']
 
 def login
   unless File.exist?(ARQUIVO)
